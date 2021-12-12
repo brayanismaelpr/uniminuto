@@ -9,9 +9,9 @@ export default function documento_pendiente() {
         <>
             <Header/>
             <section className="">
-                <main className="w-full flex flex-wrap">
+                <main className="w-full md:flex flex-wrap">
                     <Menu/>
-                    <section className="w-10/12 relative">
+                    <section className="w-full md:w-10/12 relative">
                         <Actions register="/registrar-documento-pendiente" update="/actualizar-documento-pendiente" list="/documento-pendiente"/>
                         <h1 className="text-2xl py-6 mx-auto px-4">Lista de documentos pendientes</h1>
                         <Lista/>

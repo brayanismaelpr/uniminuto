@@ -9,9 +9,9 @@ export default function empresa() {
         <>
             <Header />
             <section className="">
-                <main className="w-full flex flex-wrap">
+                <main className="w-full md:flex flex-wrap">
                     <Menu/>
-                    <section className="w-10/12 relative">
+                    <section className="w-full md:w-10/12 relative">
                         <Actions register="/registrar-empresa" update="/actualizar-empresa" list="/empresa"/>
                         <h1 className="text-2xl py-6 mx-auto px-4">Lista de empresas</h1>
                         <List/>

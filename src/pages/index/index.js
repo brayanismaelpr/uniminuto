@@ -9,9 +9,9 @@ export default function index() {
         <>
             <Header/>
             <section className="">
-                <main className="w-full flex flex-wrap">
+                <main className="w-full md:flex flex-wrap">
                     <Menu/>
-                    <section className="w-10/12 relative">
+                    <section className="w-full md:w-10/12 relative">
                         <Actions register="/registar-empleado" update="/actualizar-empleado" list="/lista-empleado"/>
                         <h1 className="text-2xl py-6 mx-auto px-4">Lista empleados</h1>
                         <Lista/>

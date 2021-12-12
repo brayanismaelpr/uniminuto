@@ -9,9 +9,9 @@ export default function tipo_convenio() {
         <>
             <Header/>
             <section className="">
-                <main className="w-full flex flex-wrap">
+                <main className="w-full md:flex flex-wrap">
                     <Menu/>
-                    <section className="w-10/12 relative">
+                    <section className="w-full md:w-10/12 relative">
                         <Actions register="/registrar-tipo-convenio" update="/actualizar-tipo-convenio" list="/tipo-convenio"/>
                         <h1 className="text-2xl py-6 mx-auto px-4">Lista tipos de convenios</h1>
                         <Lista/>
