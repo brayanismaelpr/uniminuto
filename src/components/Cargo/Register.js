@@ -1,4 +1,4 @@
-export default function Update() {
+export default function Register() {
     return (
       <section className="w-full py-12">
         <h1 className="text-center text-2xl font-semibold mb-8">
