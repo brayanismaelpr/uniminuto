@@ -57,8 +57,8 @@ export default function App() {
 						
 			<Route path="/tipo-convenio" component={tipo_convenio} />
 			<Route path="/registrar-tipo-convenio" component={registrar_tipo_convenio} />
-			<Route path="/actualizar-tipo-convenio" component={actualizar_tipo_convenio} />
-						
+			<Route path="/actualizar-tipo-convenio/:id" component={actualizar_tipo_convenio} />
+
 			<Route path="/tipo-documento" component={tipo_documento} />
 			<Route path="/registrar-tipo-documento" component={registrar_tipo_documento} />
 			<Route path="/actualizar-tipo-documento" component={actualizar_tipo_documento} />
