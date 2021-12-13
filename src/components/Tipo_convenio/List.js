@@ -3,6 +3,7 @@ import { Link } from "wouter"
 import swal from 'sweetalert';
 
 export default function List() {
+  
 const [tipoConvenios, setTipoConvenios] = useState([]);
 
 const eliminar = async(id) => {

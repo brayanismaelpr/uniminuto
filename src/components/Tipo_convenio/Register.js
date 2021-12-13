@@ -62,6 +62,7 @@ export default function Register() {
       setLocation("/tipo-convenio");
     }
   }
+  
   return (
     <section className="w-full py-12">
       <h1 className="text-center text-2xl font-semibold mb-8">

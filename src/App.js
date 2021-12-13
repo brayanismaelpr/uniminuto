@@ -37,7 +37,7 @@ export default function App() {
 
 			<Route path="/cargo" component={cargo} />
 			<Route path="/registrar-cargo" component={registrar_cargo} />
-			<Route path="/actualizar-cargo" component={actualizar_cargo} />
+			<Route path="/actualizar-cargo/:id" component={actualizar_cargo} />
 
 			<Route path="/convenio" component={convenio} />
 			<Route path="/registrar-convenio" component={registrar_convenio} />
