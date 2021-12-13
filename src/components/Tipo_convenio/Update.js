@@ -1,12 +1,14 @@
-import { useRoute } from "wouter";
-import React, { useState, useEffect,useRef } from 'react';
+import { useRoute, useLocation  } from "wouter";
+import React, { useState, useEffect, useRef } from 'react';
 import swal from 'sweetalert';
 
 export default function Update() {
+
     const [match, params] = useRoute("/actualizar-tipo-convenio/:id");
     const [tipoConvenio, setTipoConvenio] = useState({});
     const [tico_nombre, setTico_nombre] = useState("");
     const reftico_nombre = useRef(null);
+    const [location, setLocation] = useLocation();
 
     useEffect(()=>{
       const getTipoConvenio = async (url) =>{
@@ -65,7 +67,7 @@ export default function Update() {
           text:result.msg,
         });
         reftico_nombre.current.focus();
-        setTico_nombre(tipoConvenio.tico_nombre);
+        setTico_nombre("");
         return;
   
       }
@@ -74,8 +76,7 @@ export default function Update() {
           icon: 'success',
           title: 'Actualizacion exitosa',
         });
-        setTico_nombre(tico_nombre);
-        return;
+        setLocation("/tipo-convenio");
       }
     }
 

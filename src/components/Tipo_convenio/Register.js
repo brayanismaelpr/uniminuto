@@ -1,9 +1,13 @@
+import { useLocation  } from "wouter";
 import React, { useState, useRef } from 'react';
 import swal from 'sweetalert';
 
 export default function Register() {
+
   const [tico_nombre, setTico_nombre] = useState("");
   const reftico_nombre = useRef(null);
+  const [location, setLocation] = useLocation();
+
   const guardar = async() => {
     let url = 'http://localhost:4000/api/tipoconvenios',
     data = {
@@ -55,8 +59,7 @@ export default function Register() {
         icon: 'success',
         title: 'Registro exitoso',
       });
-      setTico_nombre('');
-      return;
+      setLocation("/tipo-convenio");
     }
   }
   return (
